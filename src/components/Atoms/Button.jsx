@@ -13,7 +13,7 @@ export default function Button({
     dark: "bg-dark text-white",
     danger: "bg-danger text-white"
   };
-  const basicBtnClass = `p-3 m-3 text-base rounded ${isShadow ? "shadow-md" : ""} ${isRounded ? "rounded-full" : "rounded"} font-semibold`;
+  const basicBtnClass = `m-3 text-base rounded ${isShadow ? "shadow-md" : ""} ${isRounded ? "rounded-full p-4" : "rounded p-3"} font-semibold`;
   const className = classNames(basicBtnClass, variants[variant]);
   return (
     <button className={className} {...anotherProps}>{children}</button>
